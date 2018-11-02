@@ -113,7 +113,7 @@ echo "Backuping \"${imgname}.img\" to \"${backup_dir}\"..."
 sudo cp "${dev_path}/${imgname}.img" ${backup_dir}
 
 # unmounting directory.
-unmount_kosimg
+unmount_img
 
 sudo chmod -R u+rw "${dev_path}/${imgname}.img" && sudo chmod -R go+rw "${dev_path}/${imgname}.img" && sudo chmod -R go-x "${dev_path}/${imgname}.img"
 
